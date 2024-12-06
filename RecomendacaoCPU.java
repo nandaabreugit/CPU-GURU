@@ -37,7 +37,6 @@ public class RecomendacaoCPU extends JFrame {
 
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
 
-        // Painel para "Finalidade"
         JPanel panelFinalidade = new JPanel();
         panelFinalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
         JCheckBox gameCheck = new JCheckBox("Game");
@@ -52,7 +51,6 @@ public class RecomendacaoCPU extends JFrame {
         panelFinalidade.add(edicaoVideoCheck);
         panel.add(panelFinalidade);
 
-        // Painel para "Desempenho"
         JPanel panelDesempenho = new JPanel();
         panelDesempenho.setBorder(BorderFactory.createTitledBorder("Desempenho"));
         JCheckBox desempenhoBaixoCheck = new JCheckBox("Baixo");
@@ -67,7 +65,6 @@ public class RecomendacaoCPU extends JFrame {
         panelDesempenho.add(desempenhoAltoCheck);
         panel.add(panelDesempenho);
 
-        // Painel para "Consumo de Energia"
         JPanel panelConsumo = new JPanel();
         panelConsumo.setBorder(BorderFactory.createTitledBorder("Consumo de Energia"));
         JCheckBox consumoBaixoCheck = new JCheckBox("Baixo");
@@ -82,7 +79,6 @@ public class RecomendacaoCPU extends JFrame {
         panelConsumo.add(consumoAltoCheck);
         panel.add(panelConsumo);
 
-        // Painel para "Orçamento"
         JPanel panelOrcamento = new JPanel();
         panelOrcamento.setBorder(BorderFactory.createTitledBorder("Orçamento"));
         JCheckBox orcamentoBaixoCheck = new JCheckBox("Baixo");
