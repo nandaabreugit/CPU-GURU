@@ -8,3 +8,9 @@ Criar uma interface para auxiliar o usuário na escolha de um novo computador, e
 #### Lógica do código
 Foi utilizado um dicionário para armazenar as principais combinações de entradas e funcionar como um banco de dados limitado.
 
+```java
+    private Map<String, CPU> BaseDeDados(){
+        Map<String, CPU> cpuMap = new HashMap<>();
+        cpuMap.put("game-baixo-baixo-baixo", new CPU("AMD Athlon 3000G", "CISC", "64KB L1, 512KB L2", "3.5GHz", "Econômica e suficiente para jogos leves."));
+        return cpuMap;
+    }
