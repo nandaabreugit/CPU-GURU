@@ -42,3 +42,20 @@ public String toString() {
 }
 ```
 
+#### Interface
+Para a interface que foi o foco do projeto eu utilizei uma biblioteca da própria linguagem chamada `swing`, dentro dela é possível criar uma interface para que receba os parâmetros e gere a resposta no campo de texto logo abaixo.
+
+Foram utilizadas checkbox para o usuário selecionar os parâmetros. Segue exemplo de um dos parâmetros:
+
+```java
+JPanel panelFinalidade = new JPanel();
+panelFinalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
+JCheckBox gameCheck = new JCheckBox("Game");
+JCheckBox internetCheck = new JCheckBox("Internet");
+JCheckBox edicaoVideoCheck = new JCheckBox("Edição de Vídeo");
+panelFinalidade.add(gameCheck);
+panelFinalidade.add(internetCheck);
+panelFinalidade.add(edicaoVideoCheck);
+```
+
+Como uma das maneiras de fazer uma interface mais fluida e dinâmica é indicado que o usuário clique a menor quantidade de vezes possível para se fazer a ação desejada. Anteriormente foi feito usando select mas como necessitava de dois cliques para selecionar a resposta desejada foi feita a mudança para checkbox.
