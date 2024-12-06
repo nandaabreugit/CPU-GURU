@@ -3,11 +3,11 @@ import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RecomendacaoCPU extends JFrame {
+public class recomendacaoCPU extends JFrame {
 
     private Map<String, CPU> cpuMap;
 
-    public RecomendacaoCPU() {
+    public recomendacaoCPU() {
         setTitle("CPU Guru");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600, 600);
@@ -163,7 +163,7 @@ public class RecomendacaoCPU extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(RecomendacaoCPU::new);
+        SwingUtilities.invokeLater(recomendacaoCPU::new);
     }
 
     class CPU {

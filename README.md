@@ -14,8 +14,16 @@ Uma interface em .java que utiliza quatro parâmetros para recomendar a melhor c
 ### Clone o repositório
     https://github.com/nandaabreugit/CPU-GURU.git
 
-### Rode o código .java
-* 
+### Compile e execute o código .java
+* Compile o arquivo:
+```java
+    javac recomendacaoCPU.java
+```
+
+* Agora execute o codigo já compilado:
+```java
+    java recomendacaoCPU
+```
 
 ## OBJETIVO
 Criar uma interface para auxiliar o usuário na escolha de um novo computador, ela recebe quatro parâmetros onde o usuário seleciona a finalidade, desempenho, consumo de energia e orçamento. Utilizando essas combinações de entradas ele indica a melhor configuração de CPU conforme uma base de dados limitada com as principais combinações.
