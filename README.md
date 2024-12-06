@@ -63,3 +63,5 @@ Como uma das maneiras de fazer uma interface mais fluida e dinâmica é indicado
 #### Interface Geral:
 
 ![Interface Geral](interfacegeral.png)
+
+Nesta interface só é aceito uma resposta por categoria e ao clicar no botão recomendar aparece todas as informações da CPU recomendada. Também tem os botões limpar o campo de recomendação e também para fechar a janela.
