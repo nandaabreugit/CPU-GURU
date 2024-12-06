@@ -17,12 +17,12 @@ Uma interface em .java que utiliza quatro parâmetros para recomendar a melhor c
 ### Compile e execute o código .java
 * Compile o arquivo:
 ```java
-    javac recomendacaoCPU.java
+javac recomendacaoCPU.java
 ```
 
 * Agora execute o codigo já compilado:
 ```java
-    java recomendacaoCPU
+java recomendacaoCPU
 ```
 
 ## OBJETIVO
@@ -73,18 +73,18 @@ Foram utilizadas checkbox para o usuário selecionar os parâmetros. Segue exemp
 
 ```java
 JPanel panelFinalidade = new JPanel();
-    panelFinalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
-    JCheckBox gameCheck = new JCheckBox("Game");
-    JCheckBox internetCheck = new JCheckBox("Internet");
-    JCheckBox edicaoVideoCheck = new JCheckBox("Edição de Vídeo");
-    ButtonGroup groupFinalidade = new ButtonGroup();
-    groupFinalidade.add(gameCheck);
-    groupFinalidade.add(internetCheck);
-    groupFinalidade.add(edicaoVideoCheck);
-    panelFinalidade.add(gameCheck);
-    panelFinalidade.add(internetCheck);
-    panelFinalidade.add(edicaoVideoCheck);
-    panel.add(panelFinalidade);
+panelFinalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
+JCheckBox gameCheck = new JCheckBox("Game");
+JCheckBox internetCheck = new JCheckBox("Internet");
+JCheckBox edicaoVideoCheck = new JCheckBox("Edição de Vídeo");
+ButtonGroup groupFinalidade = new ButtonGroup();
+groupFinalidade.add(gameCheck);
+groupFinalidade.add(internetCheck);
+groupFinalidade.add(edicaoVideoCheck);
+panelFinalidade.add(gameCheck);
+panelFinalidade.add(internetCheck);
+panelFinalidade.add(edicaoVideoCheck);
+panel.add(panelFinalidade);
 ```
 
 Como uma das maneiras de fazer uma interface mais fluida e dinâmica é indicado que o usuário clique a menor quantidade de vezes possível para se fazer a ação desejada. Anteriormente foi feito usando select mas como necessitava de dois cliques para selecionar a resposta desejada foi feita a mudança para checkbox.
