@@ -59,3 +59,7 @@ panelFinalidade.add(edicaoVideoCheck);
 ```
 
 Como uma das maneiras de fazer uma interface mais fluida e dinâmica é indicado que o usuário clique a menor quantidade de vezes possível para se fazer a ação desejada. Anteriormente foi feito usando select mas como necessitava de dois cliques para selecionar a resposta desejada foi feita a mudança para checkbox.
+
+#### Interface Geral:
+
+![InterfaceGeral](Área de Trabalho\interfacegeral.png)
