@@ -1,6 +1,22 @@
 # CPU-GURU
 Uma interface em .java que utiliza quatro parâmetros para recomendar a melhor configuração de CPU ao usuário.
 
+## Instalação
+### Baixar e Instalar o JDK
+* Acesse o site oficial do [JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+* Escolha o instalador adequado para o seu sistema operacional.
+* Abra o instalador e siga as instruções.
+### Escolha uma IDE de preferência
+* IntelliJ IDEA.
+* Eclipse.
+* VsCode.
+
+### Clone o repositório
+    https://github.com/nandaabreugit/CPU-GURU.git
+
+### Rode o código .java
+* 
+
 ## OBJETIVO
 Criar uma interface para auxiliar o usuário na escolha de um novo computador, ela recebe quatro parâmetros onde o usuário seleciona a finalidade, desempenho, consumo de energia e orçamento. Utilizando essas combinações de entradas ele indica a melhor configuração de CPU conforme uma base de dados limitada com as principais combinações.
 
@@ -65,3 +81,6 @@ Como uma das maneiras de fazer uma interface mais fluida e dinâmica é indicado
 ![Interface Geral](interfacegeral.png)
 
 Nesta interface só é aceito uma resposta por categoria e ao clicar no botão recomendar aparece todas as informações da CPU recomendada. Também tem os botões limpar o campo de recomendação e também para fechar a janela.
+
+### Futuras melhorias
+Para uma futura atualização seria legal adicionar mais funcionalidades como integração com alguma API de interligencia artificial para uma melhor recomendação e uma base de dados mais abrangente.

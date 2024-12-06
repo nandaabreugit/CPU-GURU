@@ -37,48 +37,64 @@ public class RecomendacaoCPU extends JFrame {
 
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
 
+        // Painel para "Finalidade"
         JPanel panelFinalidade = new JPanel();
         panelFinalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
         JCheckBox gameCheck = new JCheckBox("Game");
         JCheckBox internetCheck = new JCheckBox("Internet");
         JCheckBox edicaoVideoCheck = new JCheckBox("Edição de Vídeo");
+        ButtonGroup groupFinalidade = new ButtonGroup();
+        groupFinalidade.add(gameCheck);
+        groupFinalidade.add(internetCheck);
+        groupFinalidade.add(edicaoVideoCheck);
         panelFinalidade.add(gameCheck);
         panelFinalidade.add(internetCheck);
         panelFinalidade.add(edicaoVideoCheck);
-
         panel.add(panelFinalidade);
 
+        // Painel para "Desempenho"
         JPanel panelDesempenho = new JPanel();
         panelDesempenho.setBorder(BorderFactory.createTitledBorder("Desempenho"));
         JCheckBox desempenhoBaixoCheck = new JCheckBox("Baixo");
         JCheckBox desempenhoMedioCheck = new JCheckBox("Médio");
         JCheckBox desempenhoAltoCheck = new JCheckBox("Alto");
+        ButtonGroup groupDesempenho = new ButtonGroup();
+        groupDesempenho.add(desempenhoBaixoCheck);
+        groupDesempenho.add(desempenhoMedioCheck);
+        groupDesempenho.add(desempenhoAltoCheck);
         panelDesempenho.add(desempenhoBaixoCheck);
         panelDesempenho.add(desempenhoMedioCheck);
         panelDesempenho.add(desempenhoAltoCheck);
-
         panel.add(panelDesempenho);
 
+        // Painel para "Consumo de Energia"
         JPanel panelConsumo = new JPanel();
         panelConsumo.setBorder(BorderFactory.createTitledBorder("Consumo de Energia"));
         JCheckBox consumoBaixoCheck = new JCheckBox("Baixo");
         JCheckBox consumoMedioCheck = new JCheckBox("Médio");
         JCheckBox consumoAltoCheck = new JCheckBox("Alto");
+        ButtonGroup groupConsumo = new ButtonGroup();
+        groupConsumo.add(consumoBaixoCheck);
+        groupConsumo.add(consumoMedioCheck);
+        groupConsumo.add(consumoAltoCheck);
         panelConsumo.add(consumoBaixoCheck);
         panelConsumo.add(consumoMedioCheck);
         panelConsumo.add(consumoAltoCheck);
-
         panel.add(panelConsumo);
 
+        // Painel para "Orçamento"
         JPanel panelOrcamento = new JPanel();
         panelOrcamento.setBorder(BorderFactory.createTitledBorder("Orçamento"));
         JCheckBox orcamentoBaixoCheck = new JCheckBox("Baixo");
         JCheckBox orcamentoMedioCheck = new JCheckBox("Médio");
         JCheckBox orcamentoAltoCheck = new JCheckBox("Alto");
+        ButtonGroup groupOrcamento = new ButtonGroup();
+        groupOrcamento.add(orcamentoBaixoCheck);
+        groupOrcamento.add(orcamentoMedioCheck);
+        groupOrcamento.add(orcamentoAltoCheck);
         panelOrcamento.add(orcamentoBaixoCheck);
         panelOrcamento.add(orcamentoMedioCheck);
         panelOrcamento.add(orcamentoAltoCheck);
-
         panel.add(panelOrcamento);
 
         JLabel labelResultado = new JLabel("Recomendação de CPU:");
