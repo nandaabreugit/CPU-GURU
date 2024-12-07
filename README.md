@@ -1,6 +1,9 @@
 # CPU-GURU
 Uma interface em .java que utiliza quatro parâmetros para recomendar a melhor configuração de CPU ao usuário.
 
+## OBJETIVO
+Criar uma interface para auxiliar o usuário na escolha de um novo computador, ela recebe quatro parâmetros onde o usuário seleciona a finalidade, desempenho, consumo de energia e orçamento. Utilizando essas combinações de entradas ele indica a melhor configuração de CPU conforme uma base de dados limitada com as principais combinações.
+
 ## Instalação
 ### Baixar e Instalar o JDK
 * Acesse o site oficial do [JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
@@ -25,8 +28,15 @@ javac recomendacaoCPU.java
 java recomendacaoCPU
 ```
 
-## OBJETIVO
-Criar uma interface para auxiliar o usuário na escolha de um novo computador, ela recebe quatro parâmetros onde o usuário seleciona a finalidade, desempenho, consumo de energia e orçamento. Utilizando essas combinações de entradas ele indica a melhor configuração de CPU conforme uma base de dados limitada com as principais combinações.
+## Como utilizar o programa
+#### Execute a aplicação.
+* Selecione critérios de:
+    * Finalidade: Ex.: Game, Internet.
+    * Orçamento: Baixo, Médio, Alto.
+    * Desempenho: Baixo, Médio, Alto.
+    * Consumo de Energia: Baixo, Médio, Alto.
+* Clique em Recomendar para obter uma sugestão de CPU.
+* Use Limpar para apagar a recomendação ou Fechar para sair.
 
 ## Detalhamento do Código:
 #### Lógica do código
@@ -69,23 +79,7 @@ public String toString() {
 #### Interface
 Para a interface que foi o foco do projeto eu utilizei uma biblioteca da própria linguagem chamada `swing`, dentro dela é possível criar uma interface para que receba os parâmetros e gere a resposta no campo de texto logo abaixo.
 
-Foram utilizadas checkbox para o usuário selecionar os parâmetros. Segue exemplo de um dos parâmetros:
-
-```java
-JPanel panelFinalidade = new JPanel();
-panelFinalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
-JCheckBox gameCheck = new JCheckBox("Game");
-JCheckBox internetCheck = new JCheckBox("Internet");
-JCheckBox edicaoVideoCheck = new JCheckBox("Edição de Vídeo");
-ButtonGroup groupFinalidade = new ButtonGroup();
-groupFinalidade.add(gameCheck);
-groupFinalidade.add(internetCheck);
-groupFinalidade.add(edicaoVideoCheck);
-panelFinalidade.add(gameCheck);
-panelFinalidade.add(internetCheck);
-panelFinalidade.add(edicaoVideoCheck);
-panel.add(panelFinalidade);
-```
+Foram utilizadas checkbox para o usuário selecionar os parâmetros.
 
 Como uma das maneiras de fazer uma interface mais fluida e dinâmica é indicado que o usuário clique a menor quantidade de vezes possível para se fazer a ação desejada. Anteriormente foi feito usando select mas como necessitava de dois cliques para selecionar a resposta desejada foi feita a mudança para checkbox.
 
