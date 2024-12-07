@@ -15,121 +15,121 @@ public class recomendacaoCPU extends JFrame {
 
         cpuMap = BaseDeDados();
 
-        JMenuBar menuBar = new JMenuBar();
-        JMenu menuArquivo = new JMenu("Arquivo");
-        JMenuItem itemSalvar = new JMenuItem("Salvar");
-        JMenuItem itemSair = new JMenuItem("Sair");
+        JMenuBar menu_bar = new JMenuBar();
+        JMenu menu_arquivo = new JMenu("Arquivo");
+        JMenuItem item_salvar = new JMenuItem("Salvar");
+        JMenuItem item_sair = new JMenuItem("Sair");
 
-        menuArquivo.add(itemSalvar);
-        menuArquivo.add(itemSair);
-        menuBar.add(menuArquivo);
+        menu_arquivo.add(item_salvar);
+        menu_arquivo.add(item_sair);
+        menu_bar.add(menu_arquivo);
 
-        setJMenuBar(menuBar);
+        setJMenuBar(menu_bar);
 
-        JPanel panel = new JPanel();
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        JPanel painel = new JPanel();
+        painel.setLayout(new BoxLayout(painel, BoxLayout.Y_AXIS));
 
-        JLabel labelTitulo = new JLabel("CPU Guru", JLabel.CENTER);
-        labelTitulo.setForeground(Color.BLUE);
-        labelTitulo.setFont(new Font("Arial", Font.BOLD, 18));
-        labelTitulo.setAlignmentX(Component.CENTER_ALIGNMENT);
-        panel.add(labelTitulo);
+        JLabel label_titulo = new JLabel("CPU Guru", JLabel.CENTER);
+        label_titulo.setForeground(Color.BLUE);
+        label_titulo.setFont(new Font("Arial", Font.BOLD, 18));
+        label_titulo.setAlignmentX(Component.CENTER_ALIGNMENT);
+        painel.add(label_titulo);
 
-        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        painel.add(Box.createRigidArea(new Dimension(0, 10)));
 
-        JPanel panelFinalidade = new JPanel();
-        panelFinalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
-        JCheckBox gameCheck = new JCheckBox("Game");
-        JCheckBox internetCheck = new JCheckBox("Internet");
-        JCheckBox edicaoVideoCheck = new JCheckBox("Edição de Vídeo");
-        ButtonGroup groupFinalidade = new ButtonGroup();
-        groupFinalidade.add(gameCheck);
-        groupFinalidade.add(internetCheck);
-        groupFinalidade.add(edicaoVideoCheck);
-        panelFinalidade.add(gameCheck);
-        panelFinalidade.add(internetCheck);
-        panelFinalidade.add(edicaoVideoCheck);
-        panel.add(panelFinalidade);
+        JPanel painel_finalidade = new JPanel();
+        painel_finalidade.setBorder(BorderFactory.createTitledBorder("Finalidade"));
+        JCheckBox game_check = new JCheckBox("Game");
+        JCheckBox internet_check = new JCheckBox("Internet");
+        JCheckBox edicao_video_check = new JCheckBox("Edição de Vídeo");
+        ButtonGroup group_finalidade = new ButtonGroup();
+        group_finalidade.add(game_check);
+        group_finalidade.add(internet_check);
+        group_finalidade.add(edicao_video_check);
+        painel_finalidade.add(game_check);
+        painel_finalidade.add(internet_check);
+        painel_finalidade.add(edicao_video_check);
+        painel.add(painel_finalidade);
 
-        JPanel panelDesempenho = new JPanel();
-        panelDesempenho.setBorder(BorderFactory.createTitledBorder("Desempenho"));
-        JCheckBox desempenhoBaixoCheck = new JCheckBox("Baixo");
-        JCheckBox desempenhoMedioCheck = new JCheckBox("Médio");
-        JCheckBox desempenhoAltoCheck = new JCheckBox("Alto");
-        ButtonGroup groupDesempenho = new ButtonGroup();
-        groupDesempenho.add(desempenhoBaixoCheck);
-        groupDesempenho.add(desempenhoMedioCheck);
-        groupDesempenho.add(desempenhoAltoCheck);
-        panelDesempenho.add(desempenhoBaixoCheck);
-        panelDesempenho.add(desempenhoMedioCheck);
-        panelDesempenho.add(desempenhoAltoCheck);
-        panel.add(panelDesempenho);
+        JPanel painel_desempenho = new JPanel();
+        painel_desempenho.setBorder(BorderFactory.createTitledBorder("Desempenho"));
+        JCheckBox desempenho_baixo_check = new JCheckBox("Baixo");
+        JCheckBox desempenho_medio_check = new JCheckBox("Médio");
+        JCheckBox desempenho_alto_check = new JCheckBox("Alto");
+        ButtonGroup group_desempenho = new ButtonGroup();
+        group_desempenho.add(desempenho_baixo_check);
+        group_desempenho.add(desempenho_medio_check);
+        group_desempenho.add(desempenho_alto_check);
+        painel_desempenho.add(desempenho_baixo_check);
+        painel_desempenho.add(desempenho_medio_check);
+        painel_desempenho.add(desempenho_alto_check);
+        painel.add(painel_desempenho);
 
-        JPanel panelConsumo = new JPanel();
-        panelConsumo.setBorder(BorderFactory.createTitledBorder("Consumo de Energia"));
-        JCheckBox consumoBaixoCheck = new JCheckBox("Baixo");
-        JCheckBox consumoMedioCheck = new JCheckBox("Médio");
-        JCheckBox consumoAltoCheck = new JCheckBox("Alto");
+        JPanel painel_consumo = new JPanel();
+        painel_consumo.setBorder(BorderFactory.createTitledBorder("Consumo de Energia"));
+        JCheckBox consumo_baixo_check = new JCheckBox("Baixo");
+        JCheckBox consumo_medio_check = new JCheckBox("Médio");
+        JCheckBox consumo_alto_check = new JCheckBox("Alto");
         ButtonGroup groupConsumo = new ButtonGroup();
-        groupConsumo.add(consumoBaixoCheck);
-        groupConsumo.add(consumoMedioCheck);
-        groupConsumo.add(consumoAltoCheck);
-        panelConsumo.add(consumoBaixoCheck);
-        panelConsumo.add(consumoMedioCheck);
-        panelConsumo.add(consumoAltoCheck);
-        panel.add(panelConsumo);
+        groupConsumo.add(consumo_baixo_check);
+        groupConsumo.add(consumo_medio_check);
+        groupConsumo.add(consumo_alto_check);
+        painel_consumo.add(consumo_baixo_check);
+        painel_consumo.add(consumo_medio_check);
+        painel_consumo.add(consumo_alto_check);
+        painel.add(painel_consumo);
 
-        JPanel panelOrcamento = new JPanel();
-        panelOrcamento.setBorder(BorderFactory.createTitledBorder("Orçamento"));
-        JCheckBox orcamentoBaixoCheck = new JCheckBox("Baixo");
-        JCheckBox orcamentoMedioCheck = new JCheckBox("Médio");
-        JCheckBox orcamentoAltoCheck = new JCheckBox("Alto");
-        ButtonGroup groupOrcamento = new ButtonGroup();
-        groupOrcamento.add(orcamentoBaixoCheck);
-        groupOrcamento.add(orcamentoMedioCheck);
-        groupOrcamento.add(orcamentoAltoCheck);
-        panelOrcamento.add(orcamentoBaixoCheck);
-        panelOrcamento.add(orcamentoMedioCheck);
-        panelOrcamento.add(orcamentoAltoCheck);
-        panel.add(panelOrcamento);
+        JPanel painel_orcamento = new JPanel();
+        painel_orcamento.setBorder(BorderFactory.createTitledBorder("Orçamento"));
+        JCheckBox orcamento_baixo_check = new JCheckBox("Baixo");
+        JCheckBox orcamento_medio_check = new JCheckBox("Médio");
+        JCheckBox orcamento_alto_check = new JCheckBox("Alto");
+        ButtonGroup group_orcamento = new ButtonGroup();
+        group_orcamento.add(orcamento_baixo_check);
+        group_orcamento.add(orcamento_medio_check);
+        group_orcamento.add(orcamento_alto_check);
+        painel_orcamento.add(orcamento_baixo_check);
+        painel_orcamento.add(orcamento_medio_check);
+        painel_orcamento.add(orcamento_alto_check);
+        painel.add(painel_orcamento);
 
         JLabel labelResultado = new JLabel("Recomendação de CPU:");
         JTextArea textAreaResultado = new JTextArea(5, 20);
         textAreaResultado.setEditable(false);
         JScrollPane scrollPaneResultado = new JScrollPane(textAreaResultado);
 
-        panel.add(labelResultado);
-        panel.add(scrollPaneResultado);
+        painel.add(labelResultado);
+        painel.add(scrollPaneResultado);
 
-        JPanel panelBotoes = new JPanel(new FlowLayout());
+        JPanel painel_botoes = new JPanel(new FlowLayout());
         JButton buttonRecomendar = new JButton("Recomendar");
         JButton buttonLimpar = new JButton("Limpar");
         JButton buttonFechar = new JButton("Fechar");
 
-        panelBotoes.add(buttonRecomendar);
-        panelBotoes.add(buttonLimpar);
-        panelBotoes.add(buttonFechar);
+        painel_botoes.add(buttonRecomendar);
+        painel_botoes.add(buttonLimpar);
+        painel_botoes.add(buttonFechar);
 
-        panel.add(panelBotoes);
+        painel.add(painel_botoes);
 
         buttonRecomendar.addActionListener(_ -> {
             StringBuilder chave = new StringBuilder();
 
-            if (gameCheck.isSelected()) chave.append("game-");
-            else if (internetCheck.isSelected()) chave.append("internet-");
-            else if (edicaoVideoCheck.isSelected()) chave.append("edição de vídeo-");
+            if (game_check.isSelected()) chave.append("game-");
+            else if (internet_check.isSelected()) chave.append("internet-");
+            else if (edicao_video_check.isSelected()) chave.append("edição de vídeo-");
 
-            if (orcamentoBaixoCheck.isSelected()) chave.append("baixo-");
-            else if (orcamentoMedioCheck.isSelected()) chave.append("médio-");
-            else if (orcamentoAltoCheck.isSelected()) chave.append("alto-");
+            if (orcamento_baixo_check.isSelected()) chave.append("baixo-");
+            else if (orcamento_medio_check.isSelected()) chave.append("médio-");
+            else if (orcamento_alto_check.isSelected()) chave.append("alto-");
 
-            if (desempenhoBaixoCheck.isSelected()) chave.append("baixo-");
-            else if (desempenhoMedioCheck.isSelected()) chave.append("médio-");
-            else if (desempenhoAltoCheck.isSelected()) chave.append("alto-");
+            if (desempenho_baixo_check.isSelected()) chave.append("baixo-");
+            else if (desempenho_medio_check.isSelected()) chave.append("médio-");
+            else if (desempenho_alto_check.isSelected()) chave.append("alto-");
 
-            if (consumoBaixoCheck.isSelected()) chave.append("baixo");
-            else if (consumoMedioCheck.isSelected()) chave.append("médio");
-            else if (consumoAltoCheck.isSelected()) chave.append("alto");
+            if (consumo_baixo_check.isSelected()) chave.append("baixo");
+            else if (consumo_medio_check.isSelected()) chave.append("médio");
+            else if (consumo_alto_check.isSelected()) chave.append("alto");
 
             CPU recomendacao = cpuMap.getOrDefault(chave.toString(), null);
 
@@ -144,7 +144,7 @@ public class recomendacaoCPU extends JFrame {
 
         buttonFechar.addActionListener(_ -> System.exit(0));
 
-        add(panel, BorderLayout.CENTER);
+        add(painel, BorderLayout.CENTER);
 
         setVisible(true);
     }
