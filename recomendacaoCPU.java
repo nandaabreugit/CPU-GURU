@@ -16,7 +16,7 @@ public class recomendacaoCPU extends JFrame{
         cpuMap = BaseDeDados();
 
         JMenuBar menu_bar =new JMenuBar();
-        JMenu menu_arquivo =new JMenu("Arquivo");
+        JMenu menu_arquivo =new JMenu("Home");
         JMenuItem item_salvar= new JMenuItem("Salvar");
         JMenuItem item_sair = new JMenuItem("Sair");
 
